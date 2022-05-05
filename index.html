@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-using DOM MANIPULATION</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="row">
+                    <div class="form">
+                        <form id="foodForm">
+                            <fieldset>
+                                <h2 style="text-align: center;">PERSON-DETAILS</h2>
+                                <label for="fname">First Name</label>
+                                <br />
+                                <input class='input' type="text" id="fname" name="firstname" placeholder="Your Name.."
+                                    required>
+                                <br /><br />
+    
+                                <label for="lname">Last Name</label>
+                                <br />
+                                <input class='input' type="text" id="lname" name="lastname" placeholder="Your last Name..">
+                                <br /><br />
+    
+                                <label for="address">Address</label>
+                                <br />
+                                <textarea class='input' id="address" name="address" placeholder="Your Address.."
+                                    style="height:10vh" required></textarea>
+                                <br /><br />
+    
+                                <label for="pincode">Pincode</label>
+                                <br />
+                                <input class='input' type="number" id="pincode" name="pincode" placeholder="Your Pincode"
+                                    required>
+                                <br /><br />
+    
+                                <label for="gender">Gender</label>
+                                <br />
+                                <div class="gender">
+                                    <input type="radio" id="male" name="gender" value="male" required>Male
+                                    <input type="radio" id="femal" name="gender" value="female" required>Female
+                                    <input type="radio" id="transgender" name="gender" value="transgender"
+                                        required>Transgender
+                                </div>
+                                <br />
+    
+                                <label for="food">EDUCATION</label>
+                                <br />
+                                <div id="menuCheckbox" >
+    
+                                    <input type="text"  id="education" name="EDUCATION" placeholder="eg.,B.E/B.TECH" required>
+                                </div>
+                                <br />
+    
+                                <label for="country">Country</label>
+                                <br />
+                                <select class='input' id="country" name="country" required>
+                                    <option value="" disabled selected>---Select---</option>
+                                    <option value="india">India</option>
+                                    <option value="australia">SriLanga</option>
+                                    <option value="usa">Engaland</option>
+                                    <option value="canada">America</option>
+                                </select>
+                                <br /><br />
+    
+                                <label for="state">State</label>
+                                <br />
+                                <select class='input' id="state" name="state" required>
+                                    <option value="" disabled selected>---Select---</option>
+                                    <option value="india">India</option>
+                                    <option value="australia">SriLanga</option>
+                                    <option value="usa">Engaland</option>
+                                    <option value="canada">America</option>
+                                </select>
+                                <br /><br />
+    
+                                <button id='submit' class="btn btn-primary mb-3" type="submit " class>Submit</button>
+                            </fieldset>
+                        </form>
+    
+                    </div>
+                    
+                </div>
+                
+               
+
+            </div>
+            <!-- <div>
+                
+                <button id="edit">Edit</button>
+                <button id="update">Update</button>
+                <button id="Delete">Delete</button>
+            </div> -->
+            <div class="col-lg-9">
+                <div id="table">
+                   <div class="row">
+                    <table class="table table-bordered ">
+                        <thead class="table-responsive-xl">
+                            <tr>
+                                <th>FirstName</th>
+                                <th>LastName</th>
+                                <th>Address</th>
+                                <th>Pincode</th>
+                                <th>Gender</th>
+                                <th>EDUCATION</th>
+                                <th>Country</th>
+                                <th>State</th>
+                                <th>Edit </th> 
+                                <th>Delete</th>
+                                <th>Update</th>
+                            </tr>
+                        </thead>
+                       
+                    </table>
+                   </div>
+                   
+                </div>
+            </div>
+            
+            
+
+        </div>
+
+    </div>
+   
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+   
